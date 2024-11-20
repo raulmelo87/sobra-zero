@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Doação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="home-button">🏠</a>
+            <h1>Formulário de Doação</h1>
+        </header>
+        <main>
+            <form id="donationForm">
+                <label for="foodName">Nome do Alimento</label>
+                <input type="text" id="foodName" placeholder="Ex: Arroz, Feijão" required>
+
+                <label for="description">Descrição</label>
+                <input type="text" id="description" placeholder="Ex: Embalagem Fechada">
+
+                <label for="quantity">Quantidade</label>
+                <input type="text" id="quantity" placeholder="Ex: 2 kg, 5 latas">
+
+                <label for="expirationDate">Data de Validade</label>
+                <input type="date" id="expirationDate">
+
+                <label for="location">Localização</label>
+                <input type="text" id="location" placeholder="Digite o endereço ou selecione no mapa">
+
+                <label for="status">Status</label>
+                <select id="status" required>
+                    <option value="disponível">Disponível</option>
+                    <option value="reservado">Reservado</option>
+                    <option value="entregue">Entregue</option>
+                </select>
+
+                <div class="buttons">
+                    <button type="submit" class="confirm-button">Confirmar Doação</button>
+                    <button type="button" class="cancel-button" onclick="cancelDonation()">Cancelar</button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <img src="logo.PNG" alt="Logo Sobra Zero" class="logo">
+    
+    <script src="script.js"></script>
+</body>
+</html>
